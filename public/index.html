@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalesh Court — Supreme Petty Tribunal</title>
+  <meta name="description" content="Dosti apni jagah, faisla apni jagah. Settle roommate disputes, food crimes, and group chat drama with live audio, jury voting, and official verdicts.">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
+  <!-- Premium Judicial Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-theme="white">
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="#" class="brand" id="brand-link">
+      <div class="brand-seal">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m14 13-7.5 7.5c-.8.8-2 .8-2.8 0l-1.4-1.4c-.8-.8-.8-2 0-2.8L9.8 8.8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">KALESH COURT</span>
+        <span class="brand-tagline">SUPREME PETTY TRIBUNAL</span>
+      </div>
+    </a>
+    
+    <div class="top-buttons">
+      <!-- 100% Free Cosmetic Pass Button -->
+      <button class="btn btn-pass" id="nav-pass-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+        Court Avatars (FREE)
+      </button>
+
+      <!-- Theme Switcher (White / Dark Noir) -->
+      <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle White / Dark Theme">
+        <span id="theme-icon">📜</span>
+        <span id="theme-label">White Page</span>
+      </button>
+
+      <button class="btn btn-outline" id="nav-rules-btn">Court Rules</button>
+      <button class="btn btn-outline" id="nav-join-btn">Join Docket</button>
+      <button class="btn btn-gold" id="nav-create-btn">+ File a Kalesh</button>
+    </div>
+  </header>
+
+  <!-- Main Application Container -->
+  <main class="container" id="app">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- Modals & Dialogs -->
+  <dialog id="dialog">
+    <!-- Injected dynamic form -->
+  </dialog>
+
+  <!-- Theatrical Fullscreen OBJECTION Drama Overlay -->
+  <div id="objection-overlay">
+    <div class="objection-letterbox-top"></div>
+    <div class="objection-content">
+      <div class="objection-stamp">TAREEKH PE TAREEKH NAHI CHALEGI!</div>
+      <div class="objection-banner">OBJECTION!</div>
+      <div class="objection-speaker" id="objection-speaker">AARAV CALLS FOR ORDER IN COURT</div>
+    </div>
+    <div class="objection-letterbox-bottom"></div>
+  </div>
+
+  <!-- Celebratory Confetti Canvas for Verdicts -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

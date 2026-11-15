@@ -1,0 +1,13 @@
+{
+  "name": "kalesh-room-clone",
+  "version": "1.0.0",
+  "description": "Mock Courtroom Deliberation & Voice WebRTC Platform",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
